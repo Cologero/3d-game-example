@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - ground
+  - Ground
+  - Coin
+  - Collectibles
+  - Spinner
   layers:
   - Default
   - TransparentFX
