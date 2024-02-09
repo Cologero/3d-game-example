@@ -9,6 +9,9 @@ TagManager:
   - Coin
   - Collectibles
   - Spinner
+  - Collectible
+  - Collectible-Return
+  - Collectible-Destroy
   layers:
   - Default
   - TransparentFX
