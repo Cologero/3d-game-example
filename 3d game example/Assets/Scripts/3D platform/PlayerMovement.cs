@@ -6,6 +6,10 @@ public class PlayerMovement : MonoBehaviour
 {
      public float Speed = 1f;
 
+  public bool IsOnGround = true;
+     
+     public float JumpForce = 10f;
+
     public float RotaionalSpeed = 60f;
 
     private float _horizontalInput;
@@ -25,5 +29,16 @@ public class PlayerMovement : MonoBehaviour
         transform.Translate(Vector3.forward * Speed * _verticalInput * Time.deltaTime);
         transform.Rotate(Vector3.up, RotaionalSpeed * _horizontalInput * Time.deltaTime);
     }
+
+     private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            IsOnGround = true;
+        }
+
+    }
+    
+
 }
 
